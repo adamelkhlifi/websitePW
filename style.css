@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("bggym.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 14px;
+}

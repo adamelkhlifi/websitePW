@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique de musculation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+
+<h1>Boutique de musculation</h1>
+
+<!-- POIDS LIBRES -->
+<h2>Poids libres</h2>
+
+<p><strong>Haltères (20 kg)</strong></p>
+<p>Parfaits pour le renforcement musculaire à la maison.</p>
+<img src="dumbbells.jpg" width="150"><br>
+<button onclick="add(400)">Ajouter – 400 MAD</button>
+
+<p><strong>Barre olympique</strong></p>
+<p>Idéale pour le développé couché et le squat.</p>
+<img src="barbell.jpg" width="150"><br>
+<button onclick="add(600)">Ajouter – 600 MAD</button>
+
+<hr>
+
+<!-- MACHINES -->
+<h2>Machines</h2>
+
+<p><strong>Machine développé couché</strong></p>
+<p>Machine stable pour travailler les pectoraux en sécurité.</p>
+<img src="bench.jpg" width="150"><br>
+<button onclick="add(3000)">Ajouter – 3000 MAD</button>
+
+<p><strong>Presse à jambes</strong></p>
+<p>Permet de renforcer les cuisses et les mollets.</p>
+<img src="legpress.jpg" width="150"><br>
+<button onclick="add(5000)">Ajouter – 5000 MAD</button>
+
+<hr>
+
+<!-- ACCESSOIRES -->
+<h2>Accessoires</h2>
+
+<p><strong>Gants de musculation</strong></p>
+<p>Protègent les mains et améliorent la prise.</p>
+<img src="gloves.jpg" width="150"><br>
+<button onclick="add(150)">Ajouter – 150 MAD</button>
+
+<p><strong>Bandes de résistance</strong></p>
+<p>Accessoire polyvalent pour l’échauffement et la rééducation.</p>
+<img src="bands.jpg" width="150"><br>
+<button onclick="add(200)">Ajouter – 200 MAD</button>
+
+<hr>
+
+<h2>Total du panier : <span id="total">0</span> MAD</h2>
+
+</div>
+
+<footer>
+  <p>Fait par Adam Elkhlifi</p>
+</footer>
+
+<script>
+  let total = 0;
+
+  function add(prix) {
+    total += prix;
+    document.getElementById("total").textContent = total;
+  }
+</script>
+
+</body>
+</html>
